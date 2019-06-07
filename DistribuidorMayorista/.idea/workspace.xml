@@ -2,28 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc10c36-96db-4b48-8dd3-386734e4e61a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/casaCentral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redMayorista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sucursal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Primera_prueba/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Primera_prueba/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej09.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Primera_prueba/src/imPant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Primera_prueba/src/parcial2017T1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Primera_prueba/src/parcialAlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/network.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/casaCentral.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/casaCentral.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/redMayorista.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/redMayorista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/sucursal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/sucursal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/casaCentral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/central.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redMayorista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sucursal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/branch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Primera_prueba/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/carga_imprime_matNxM.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/carga_imprime_matNxM.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/clase8tp1oj4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/clase8tp1oj5.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/clase8tp1oj7.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/carga_imprime_matNxM.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/carga_imprime_matNxM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1oj4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1oj5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1oj7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej09.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej09.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej10.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej12.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/imPant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/imPant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/parcial2017T1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/parcial2017T1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/parcialAlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/parcialAlan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,50 +60,51 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="880" />
+          <entry key="dummy" value="9" />
+          <entry key="java" value="1257" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="880" />
+          <entry key="JAVA" value="1257" />
+          <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/central.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+                <element signature="e#914#915#0" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/branch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-35">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/casaCentral.java">
+        <entry file="file://$PROJECT_DIR$/src/network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sucursal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redMayorista.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="255">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -129,9 +133,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/producto.java" />
+        <option value="$PROJECT_DIR$/src/sucursal.java" />
         <option value="$PROJECT_DIR$/src/redMayorista.java" />
         <option value="$PROJECT_DIR$/src/casaCentral.java" />
-        <option value="$PROJECT_DIR$/src/sucursal.java" />
+        <option value="$PROJECT_DIR$/src/central.java" />
+        <option value="$PROJECT_DIR$/src/network.java" />
       </list>
     </option>
   </component>
@@ -179,7 +185,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559747938864" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559945211588" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -196,8 +202,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="redMayorista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="redMayorista" />
+    <configuration name="network" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="network" />
       <module name="DistribuidorMayorista" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -205,7 +211,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.redMayorista" />
+        <item itemvalue="Application.network" />
       </list>
     </recent_temporary>
   </component>
@@ -223,18 +229,18 @@
       <workItem from="1559706198449" duration="8718000" />
       <workItem from="1559824966987" duration="1204000" />
       <workItem from="1559852826103" duration="202000" />
-      <workItem from="1559929860697" duration="598000" />
+      <workItem from="1559929860697" duration="3867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12315000" />
+    <option name="totallyTimeSpent" value="15584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2659091" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2659091" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -243,7 +249,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32840723" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3858785" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -271,20 +277,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/casaCentral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sucursal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -292,10 +284,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redMayorista.java">
+    <entry file="file://$PROJECT_DIR$/src/branch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="-35">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/central.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/network.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>

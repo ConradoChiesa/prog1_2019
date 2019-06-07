@@ -1,16 +1,16 @@
 
-public class sucursal {
+public class branch {
     //VARIABLES
-    int matProdSuc[][] = new int[casaCentral.MAXROW][casaCentral.MAXPRODUCTS];
+    int matProdSuc[][] = new int[central.MAXROW][central.MAXPRODUCTS];
 
     //METODOS GETTER
-    public sucursal() {
+    public branch() {
         setMatProdSuc(matProdSuc);
 
     }
     public void printMatSuc (int[][] matProdSuc) {
-        for (int i = 0; i < casaCentral.MAXROW; i++) {
-            for (int j = 0; j < casaCentral.MAXPRODUCTS; j++) {
+        for (int i = 0; i < central.MAXROW; i++) {
+            for (int j = 0; j < central.MAXPRODUCTS; j++) {
                 System.out.println(matProdSuc[i][j]);
             }
         }
@@ -18,15 +18,15 @@ public class sucursal {
 
     //METODOS SETTER
     public void setMatProdSuc(int[][] matProdSuc) {
-        for (int i = 0; i < casaCentral.MAXROW; i++) {
-            for (int j = 0; j < casaCentral.MAXPRODUCTS; j++) {
+        for (int i = 0; i < central.MAXROW; i++) {
+            for (int j = 0; j < central.MAXPRODUCTS; j++) {
                 matProdSuc[i][j] = -1;
             }
         }
     }
 
     public void addProducts(int [][] matProdSuc, int posProd, int reload) {
-        matProdSuc[casaCentral.ROWPROD][posProd] += reload;
+        matProdSuc[central.ROWPROD][posProd] += reload;
     }
 
 }
