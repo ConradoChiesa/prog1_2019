@@ -15,6 +15,9 @@ public class network {
 //        central.setMinOfProd(4,20);
 //        central.setMaxOfProd(4,100);
         central.setAllMinMax(15,50);
+        central.loadProduct(0, 50);
+        central.loadProduct(2, 40);
+        central.loadProduct(4, 80);
         central.printMatProd();
     }
 }

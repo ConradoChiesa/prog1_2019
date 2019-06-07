@@ -2,7 +2,7 @@
 entre filas por la suma de contenido de cada fila, insertar una fila
 cuyos elementos se encuentran en el arreglo nuevo de tamaño n
 manteniendo el orden.*/
-public class clase8tp1oj5 {
+public class clase8tp1ej5 {
     public static int MAXNUM = 100;
     public static int MAXFIL = 10;
     public static int MAXCOL = 3;

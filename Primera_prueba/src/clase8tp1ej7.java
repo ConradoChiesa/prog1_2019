@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class clase8tp1oj7 {
+public class clase8tp1ej7 {
         public static int MAXFIL = 5;
         public static int MAXCOL = 6;
         public static void main(String[] args) {

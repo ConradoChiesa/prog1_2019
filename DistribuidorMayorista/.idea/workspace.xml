@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc10c36-96db-4b48-8dd3-386734e4e61a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/network.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/casaCentral.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/casaCentral.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/redMayorista.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/redMayorista.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/sucursal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/sucursal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/casaCentral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/central.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redMayorista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sucursal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/branch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Primera_prueba/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/carga_imprime_matNxM.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/carga_imprime_matNxM.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/clase8tp1oj4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/clase8tp1oj5.class" beforeDir="false" />
@@ -61,24 +52,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="1257" />
+          <entry key="java" value="1298" />
+          <entry key="txt" value="241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1257" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="JAVA" value="1298" />
+          <entry key="PLAIN_TEXT" value="250" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/central.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#784#785#0" expanded="true" />
                 <element signature="e#826#827#0" expanded="true" />
@@ -100,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="123">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -185,7 +177,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559945211588" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559945898870" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -229,12 +221,20 @@
       <workItem from="1559706198449" duration="8718000" />
       <workItem from="1559824966987" duration="1204000" />
       <workItem from="1559852826103" duration="202000" />
-      <workItem from="1559929860697" duration="3867000" />
+      <workItem from="1559929860697" duration="4714000" />
     </task>
+    <task id="LOCAL-00001" summary="Funciones para cargar la matriz de productos por producto maximos y minimos y todos, también las funciones para hacerlo por cada uno y la funcion para cargar la cantidad de productos (sin test). También se mejoro la impresion de la matriz.">
+      <created>1559945459218</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559945459218</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15584000" />
+    <option name="totallyTimeSpent" value="16431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="738" extended-state="6" />
@@ -276,6 +276,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Funciones para cargar la matriz de productos por producto maximos y minimos y todos, también las funciones para hacerlo por cada uno y la funcion para cargar la cantidad de productos (sin test). También se mejoro la impresion de la matriz." />
+    <option name="LAST_COMMIT_MESSAGE" value="Funciones para cargar la matriz de productos por producto maximos y minimos y todos, también las funciones para hacerlo por cada uno y la funcion para cargar la cantidad de productos (sin test). También se mejoro la impresion de la matriz." />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/stock.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -291,10 +295,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/network.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/central.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#784#785#0" expanded="true" />
             <element signature="e#826#827#0" expanded="true" />
@@ -303,13 +314,6 @@
             <element signature="e#976#977#0" expanded="true" />
             <element signature="e#1026#1027#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/network.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>

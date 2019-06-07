@@ -4,7 +4,7 @@ realizar un programa que ordene ascendentemente cada fila de la
 matriz por tamaño de secuencias. Las secuencias deberán quedar
 separadas por un carácter espacio siempre que haya lugar. */
 
-public class clase8tp1oj10 {
+public class clase8tp1ej10 {
     public static int MAXFIL = 3;
     public static int MAXCOL = 16;
     public static int MAXP = 2;
@@ -15,10 +15,8 @@ public class clase8tp1oj10 {
                 {' ','e','j','e','r','c','i','c','i','o','s',' ',' ','y',' ',' '},
                 {' ',' ',' ',' ',' ','p','r','a','c','t','i','c','o','s',' ',' '},
         };
-        imPant.imprimir_matriz_chars(matNxM, MAXFIL, MAXCOL); //Usando objetos por primera vez que lo utilizo y la mejore para que funcione imprimiendo matices MxN
+        imPant.imprimir_matriz_chars(matNxM, MAXFIL, MAXCOL); //Objeto propio que imprime por pantalla, en este caso una matriz de chars MxN
         buscar_acomodar_sec(matNxM);
-        //procesar
-        //1:buscar secuencia, 2:comparar por longitud, 3: comparar elementos, 4:remplezar arrgelos
         //imprimir resultados
         imPant.imprimir_matriz_chars(matNxM, MAXFIL, MAXCOL);
     }
@@ -122,6 +120,4 @@ public class clase8tp1oj10 {
         }
         return pos_ini;
     }
-
-
 }

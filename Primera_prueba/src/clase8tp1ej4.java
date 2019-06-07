@@ -1,16 +1,16 @@
 /*Dada una matriz de m × n enteros, realizar los métodos necesarios
 para ordenar cada una de sus filas.*/
 
-public class clase8tp1oj4 {
+public class clase8tp1ej4 {
     public static int MAXNUM = 100;
     public static int MAXFIL = 5;
     public static int MAXCOL = 2;
     public static void main(String[] args) {
         int matNxM[][] = new int[MAXFIL][MAXCOL];
-        cargar_matriz(matNxM);
-        imprimir_matriz(matNxM);
+        cargar_matriz(matNxM, MAXFIL, MAXCOL, MAXNUM);
+        imPant.imprimir_matriz_enteros(matNxM, MAXFIL, MAXCOL);
         ordenar_mat_asc(matNxM);
-        imprimir_matriz(matNxM);
+        imPant.imprimir_matriz_enteros(matNxM, MAXFIL, MAXCOL);
     }
 
     private static void ordenar_mat_asc(int[][] matNxM) {
@@ -33,11 +33,11 @@ public class clase8tp1oj4 {
         }
     }
 
-    public static void cargar_matriz(int[][] mat) {
-        for (int i = 0 ; i < MAXFIL; i++)
-            for (int j = 0 ; j < MAXCOL; j++)
+    public static void cargar_matriz(int[][] mat,int fila, int col,int maximo) {
+        for (int i = 0 ; i < fila; i++)
+            for (int j = 0 ; j < col; j++)
                 //mat[i][j] = (int)(Math.random()*MAXNUM+1);
-                mat[i][j] = obtener_entero(MAXNUM); //Si no existe la funcion obtener entero comentar esta linea y descomentar la anterior
+                mat[i][j] = obtener_entero(maximo); //Si no existe la funcion obtener entero comentar esta linea y descomentar la anterior
     }
 
     public static int obtener_entero(int rango) {
@@ -45,13 +45,6 @@ public class clase8tp1oj4 {
         return entero;
     }
 
-    public static void imprimir_matriz(int[][] mat) {
-        for (int i = 0 ; i < MAXFIL; i++){
-            System.out.print(i + ": ");
-            for (int j = 0 ; j < MAXCOL; j++)
-                System.out.print(j+": ["+mat[i][j]+"] ");
-            System.out.println("");
-        }
-    }
+
 
 }
