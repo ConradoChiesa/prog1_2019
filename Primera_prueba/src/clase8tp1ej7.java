@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class clase8tp1oj7 {
-        public static int MAXNUM = 100;
         public static int MAXFIL = 5;
         public static int MAXCOL = 6;
         public static void main(String[] args) {
@@ -16,10 +15,10 @@ public class clase8tp1oj7 {
                     {' ','y','i','g','g',' '},
             };
             
-            imprimir_matriz(matNxM);
+            imPant.imprimir_matriz_chars(matNxM, MAXFIL, MAXCOL);
             TAM = pedir_TAM();
             buscar_eliminar_sec(matNxM, TAM);
-            imprimir_matriz(matNxM);
+            imPant.imprimir_matriz_chars(matNxM, MAXFIL, MAXCOL);
         }
 //Este procedimineto fue hecho en la practica con un ayudante, contempla la excepción que devuelven posiciones -1
 
@@ -116,18 +115,6 @@ public class clase8tp1oj7 {
             return entero;
         }
 
-        public static void imprimir_matriz(char[][] mat) {
-            System.out.print("   ");
-            for (int i = 0; i < MAXCOL; i++) {
-                System.out.print("  "+i+" ");
-            }
-            System.out.println("");
-            for (int i = 0 ; i < MAXFIL; i++){
-                System.out.print(i + ":] ");
-                for (int j = 0 ; j < MAXCOL; j++)
-                    System.out.print("["+mat[i][j]+"] ");
-                System.out.println("");
-            }
-        }
+
 
 }
