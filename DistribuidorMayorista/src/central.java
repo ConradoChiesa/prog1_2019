@@ -1,5 +1,6 @@
 public class central {
     //VARIABLES
+
     final static int MAXPRODUCTS = 5;
     final static int MAXROW = 3;
     final static int MAXSUC = 10;
@@ -8,19 +9,20 @@ public class central {
     final static int ROWMAXPROD = 2;
     int [][] matProd = new int[MAXROW][MAXPRODUCTS];
     int [] cantSuc = new int[MAXSUC];
+
     //METODOS GETTER
 
     public void printMatProd () {
-        for (int i = 0; i < central.MAXROW; i++) {
-            System.out.println("");
+//        for (int i = 0; i < central.MAXROW; i++) {
+//            System.out.println("");
             for (int j = 0; j < central.MAXPRODUCTS; j++) {
-                System.out.print(" "+ matProd[i][j] + " ");
-            }
-        }
+                System.out.print("Id producto: " + j + " cantidad: " + matProd[ROWPROD][j] + ", mínimo :"+ matProd[ROWMINPROD][j] + ", máximo :"+ matProd[ROWMAXPROD][j]);
         System.out.println("");
+            }
+//        }
     }
 
-    public void createSucs () {
+    public void createBranch () {
         
     }
 
@@ -45,4 +47,5 @@ public class central {
             matProd[ROWMAXPROD][i] = max;
         }
     }
+    public void sellProd(int posProd, int selled) { matProd[ROWPROD][posProd] -= selled; }
 }

@@ -3,7 +3,7 @@ public class network {
 
     public static void main(String[] args) {
         central central = new central();
-        central.printMatProd();
+//        central.printMatProd();
 //        central.setMinOfProd(0,20);
 //        central.setMaxOfProd(0,100);
 //        central.setMinOfProd(1,20);
@@ -19,5 +19,13 @@ public class network {
         central.loadProduct(2, 40);
         central.loadProduct(4, 80);
         central.printMatProd();
+        central.setMinOfProd(0,10);
+        central.setMinOfProd(1,10);
+        central.setMinOfProd(2,10);
+        central.setMinOfProd(3,10);
+        central.setMinOfProd(4,10);
+        central.sellProd(2,39);
+        central.printMatProd();
+
     }
 }
