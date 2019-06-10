@@ -7,27 +7,33 @@ public class central {
     final static int ROWPROD = 0;
     final static int ROWMINPROD = 1;
     final static int ROWMAXPROD = 2;
-    int [][] matProd = new int[MAXROW][MAXPRODUCTS];
-    int [] cantSuc = new int[MAXSUC];
+    private int [][] matProd = new int[MAXROW][MAXPRODUCTS];
+    private branch[] branches = new branch[MAXSUC];
+    private int branchesCount = 0;
 
     //METODOS GETTER
 
     public void printMatProd () {
-//        for (int i = 0; i < central.MAXROW; i++) {
-//            System.out.println("");
-            for (int j = 0; j < central.MAXPRODUCTS; j++) {
-                System.out.print("Id producto: " + j + " cantidad: " + matProd[ROWPROD][j] + ", mínimo :"+ matProd[ROWMINPROD][j] + ", máximo :"+ matProd[ROWMAXPROD][j]);
-        System.out.println("");
-            }
-//        }
+        System.out.println("Pruductos En Central");
+        for (int j = 0; j < central.MAXPRODUCTS; j++) {
+            System.out.print("Id producto: " + j + " Cantidad -> " + matProd[ROWPROD][j] + ", Mínimo -> "+ matProd[ROWMINPROD][j] + ", Máximo -> "+ matProd[ROWMAXPROD][j]);
+            System.out.println("");
+        }
     }
-
-    public void createBranch () {
-        
+    public void printBranchProd(){
+        for (int i = 0; i<branchesCount; i++)
+            System.out.println("En la sucursal "+i);
     }
-
-
     //METODOS SETTER
+
+    public void createBranch (branch num) {
+        if (branchesCount < MAXSUC-1) {
+            branches[branchesCount] = num;
+            branchesCount ++;
+        } else {
+            System.out.println("No se pueden crear más sucursales");
+        }
+    }
 
     public void loadProduct(int posProd, int cantProd) {
         matProd[ROWPROD][posProd] += cantProd;
@@ -43,9 +49,18 @@ public class central {
 
     public void setAllMinMax (int min, int max) {
         for (int i = 0; i < MAXPRODUCTS; i++) {
-            matProd[ROWMINPROD][i] = min;
-            matProd[ROWMAXPROD][i] = max;
+            setMinOfProd(i, min);
+            setMaxOfProd(i, max);
+//            matProd[ROWMINPROD][i] = min;
+//            matProd[ROWMAXPROD][i] = max;
         }
     }
-    public void sellProd(int posProd, int selled) { matProd[ROWPROD][posProd] -= selled; }
+    public void sellProd(int posProd, int selled) {
+        if (matProd[ROWPROD][posProd] >= selled) {
+            matProd[ROWPROD][posProd] -= selled;
+        } else {
+            System.out.println("No hay suficientes productos para realizar la venta.\n" +
+                    "Solo puede vnderse " + matProd[ROWPROD][posProd]);
+        }
+    }
 }
