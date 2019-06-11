@@ -1,9 +1,15 @@
 
 public class branch {
     //VARIABLES
-    int matProdSuc[][] = new int[central.MAXROW][central.MAXPRODUCTS];
-//    private String BranchName = " ";
+//    int matProdSuc[][] = new int[central.MAXROW][central.MAXPRODUCTS];
+    private int matProdSuc[][];
+    private String BranchName;
 
+    public branch (String name) {
+        BranchName = name;
+        matProdSuc = new int[central.MAXROW][central.MAXPRODUCTS];
+        setMatProdSuc(matProdSuc);
+    }
 
     //METODOS GETTER
     public void listProds(){
@@ -25,10 +31,10 @@ public class branch {
     }
 
     //METODOS SETTER
-    public void setMatProdSuc() {
+    public void setMatProdSuc(int [][] mat) {
         for (int i = 0; i < central.MAXROW; i++) {
             for (int j = 0; j < central.MAXPRODUCTS; j++) {
-                matProdSuc[i][j] = -1;
+                mat[i][j] = -1;
             }
         }
     }

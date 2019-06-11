@@ -51,8 +51,6 @@ public class central {
         for (int i = 0; i < MAXPRODUCTS; i++) {
             setMinOfProd(i, min);
             setMaxOfProd(i, max);
-//            matProd[ROWMINPROD][i] = min;
-//            matProd[ROWMAXPROD][i] = max;
         }
     }
     public void sellProd(int posProd, int selled) {
@@ -60,7 +58,7 @@ public class central {
             matProd[ROWPROD][posProd] -= selled;
         } else {
             System.out.println("No hay suficientes productos para realizar la venta.\n" +
-                    "Solo puede vnderse " + matProd[ROWPROD][posProd]);
+                    "Solo puede venderse " + matProd[ROWPROD][posProd]);
         }
     }
 }

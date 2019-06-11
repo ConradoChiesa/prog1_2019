@@ -27,7 +27,7 @@ public class network {
         central.loadProduct(2, 20);
         central.sellProd(2,42);
         central.printMatProd();
-        branch uno = new branch();
+        branch uno = new branch("uno");
         uno.setMatProdSuc();
         uno.startProd(1, 0, 20, 60);
         uno.addProducts(1, 60);
