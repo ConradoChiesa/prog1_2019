@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc10c36-96db-4b48-8dd3-386734e4e61a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Primera_prueba/src/seg_parcial2019.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/branch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/central.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/central.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/branch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/central.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/central.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/clase8tp1ej09.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/out/production/Primera_prueba/clase8tp1ej09.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej09.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/src/clase8tp1ej09.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +31,9 @@
           <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="3" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,13 +49,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="3038" />
+          <entry key="java" value="3435" />
           <entry key="txt" value="241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3038" />
+          <entry key="JAVA" value="3435" />
           <entry key="PLAIN_TEXT" value="250" />
         </counts>
       </usages-collector>
@@ -55,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/central.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
+            <state relative-caret-position="16">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -67,17 +75,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/branch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="153">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state relative-caret-position="612">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -109,9 +117,9 @@
         <option value="$PROJECT_DIR$/src/sucursal.java" />
         <option value="$PROJECT_DIR$/src/redMayorista.java" />
         <option value="$PROJECT_DIR$/src/casaCentral.java" />
+        <option value="$PROJECT_DIR$/src/network.java" />
         <option value="$PROJECT_DIR$/src/branch.java" />
         <option value="$PROJECT_DIR$/src/central.java" />
-        <option value="$PROJECT_DIR$/src/network.java" />
       </list>
     </option>
   </component>
@@ -122,10 +130,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
+    <option name="x" value="10" />
     <option name="y" value="80" />
-    <option name="width" value="1306" />
-    <option name="height" value="620" />
+    <option name="width" value="1316" />
+    <option name="height" value="621" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -142,24 +150,19 @@
               <item name="DistribuidorMayorista" type="b2602c69:ProjectViewProjectNode" />
               <item name="DistribuidorMayorista" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DistribuidorMayorista" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DistribuidorMayorista" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560288441064" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560307057071" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -208,7 +211,9 @@
       <workItem from="1559999986695" duration="1913000" />
       <workItem from="1560099645005" duration="21621000" />
       <workItem from="1560219605228" duration="938000" />
-      <workItem from="1560286252483" duration="2187000" />
+      <workItem from="1560286252483" duration="8918000" />
+      <workItem from="1560347168766" duration="599000" />
+      <workItem from="1560445992516" duration="1487000" />
     </task>
     <task id="LOCAL-00001" summary="Funciones para cargar la matriz de productos por producto maximos y minimos y todos, también las funciones para hacerlo por cada uno y la funcion para cargar la cantidad de productos (sin test). También se mejoro la impresion de la matriz.">
       <created>1559945459218</created>
@@ -221,13 +226,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45308000" />
+    <option name="totallyTimeSpent" value="54125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28863636" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19621213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -236,7 +241,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.48932678" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26384366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -245,7 +250,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32840723" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32840723" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -269,24 +274,24 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/stock.java" />
-    <entry file="file://$PROJECT_DIR$/src/branch.java">
+    <entry file="file://$PROJECT_DIR$/src/central.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="16">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/central.java">
+    <entry file="file://$PROJECT_DIR$/src/branch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
+        <state relative-caret-position="153">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="612">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
         </state>
       </provider>
     </entry>

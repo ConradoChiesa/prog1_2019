@@ -10,18 +10,18 @@ tamaño).*/
 public class clase8tp1ej09 {
     public static int MAXFIL = 5;
     public static int MAXCOL = 10;
-    public static int MAXP = 2;
-    public static int MAXR = 5;
+    private static int MAXP = 2;
+    private static int MAXR = 5;
     public static void main(String[] args) {
         //char p[] = new char[MAXP];
         //char r[] = new char[MAXR];
-        char p [] = {'b','e'};
+        char p [] = {'g','u'};
         char r [] = {'a','a','a','a','a'};
         char matNxM[][] = {
                 {' ','b','e',' ','h',' ',' ',' ','d',' '},
                 {' ','v','f','h','a',' ','l','d','s',' '},
                 {' ',' ','v','r','r','e','j',' ',' ',' '},
-                {' ','f','r',' ','g','u','e',' ',' ',' '},
+                {' ','f','r',' ','g','u',' ',' ',' ',' '},
                 {' ','y','i','g','g',' ',' ',' ','d',' '},
         };
         imPant.imprimir_matriz_chars(matNxM, MAXFIL, MAXCOL); //Usando objetos por primera vez que lo utilizo y la mejore para que funcione imprimiendo matices MxN
@@ -34,14 +34,16 @@ public class clase8tp1ej09 {
         buscar_procesar_sec(matNxM, p, r);
         //1:buscar secuencia, 2:comparar por longitud, 3: comparar elementos, 4:remplezar arrgelos
         //imprimir resultados
+        imPant.imprimir_matriz_chars(matNxM, MAXFIL, MAXCOL);
     }
 
     private static void buscar_procesar_sec(char[][] matNxM, char[] p, char[] r) {
-        int ini_sec = 0, fin_sec = 0;
+        int ini_sec, fin_sec;
         for (int i = 0; i < MAXFIL; i++) {
             ini_sec = 0;
+            fin_sec = 0;
             while (ini_sec != -1 && fin_sec != -1) {
-                ini_sec = buscar_pos_ini(matNxM, i, fin_sec);
+                ini_sec = buscar_pos_ini(matNxM, i, fin_sec+1);
                 if (ini_sec != -1){
                     fin_sec = buscar_pos_fin(matNxM, i, ini_sec);
                 }
@@ -57,16 +59,16 @@ public class clase8tp1ej09 {
 
     private static boolean comprobar(char[][] matNxM, int fila, char[] p, int ini_sec, int fin_sec) {
         boolean identica = true;
-        for (int i = ini_sec; i < MAXP; i++) {
-            if (matNxM[fila][i] != p[i]) identica = false;
+        for (int i = 0; i < MAXP; i++) {
+            if (matNxM[fila][i + ini_sec] != p[i]) identica = false;
         }
         return identica;
     }
 
     private static void cambiar_sec(char[][] matNxM, int fila, char[] r, int ini_sec) {
 
-        for (int i = ini_sec; i < MAXR; i++) {
-            matNxM[fila][i] = r[i];
+        for (int i = 0; i < MAXR; i++) {
+            matNxM[fila][i + ini_sec] = r[i];
         }
     }
 
