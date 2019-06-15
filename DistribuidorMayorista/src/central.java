@@ -3,12 +3,12 @@ public class central {
 
     final static int MAXPRODUCTS = 5; // Maximo de productos distintos o columnas de la matriz
     final static int MAXROW = 3; // Maximo de filas
-    final static int MAXSUC = 10; // Maximo de sucursales
+    final static int MAXBRANCH = 10; // Maximo de sucursales
     final static int ROWPROD = 0; // Fila de cantidad de productos
     final static int ROWMINPROD = 1; // Fila cantidad minima de productos
     final static int ROWMAXPROD = 2; // Fila cantidad maxima de productos
     private int matProd [][] = new int[MAXROW][MAXPRODUCTS];
-    private branch branches [] = new branch[MAXSUC];
+    private branch branches [] = new branch[MAXBRANCH];
     private int branchesCount = 0;
 
     //METODOS GETTER
@@ -23,14 +23,38 @@ public class central {
             System.out.println("");
         }
     }
+
+    //Esta funcion me imprime cualquier cosa
+    public void printMat (int mat[][]) {
+        for (int i = 0; i < central.MAXPRODUCTS; i++) {
+        System.out.println("Pruductos En "+ i );
+            if (mat[central.ROWPROD][i] != -1) {
+                System.out.print("Id producto -> " + i + " Cantidad -> " + mat[central.ROWPROD][i] + ", Mínimo -> "+ mat[central.ROWMINPROD][i] + ", Máximo -> "+ mat[central.ROWMAXPROD][i]);
+                System.out.println("");
+            }
+        }
+    }
+
     public void printBranchProd(){
         for (int i = 0; i<branchesCount; i++)
             System.out.println("En la sucursal "+i);
     }
+    // Esta funcion no se si esta bien.
+    public branch getMat(int pos) { return branches[pos]; }
+
+    public void listAllBranchesProds() {
+
+        for (int i = 0; i < branchesCount; i++) {
+            printMat(getMat(i).getMat());
+
+        }
+    }
+    
+    
     //METODOS SETTER
 
     public void createBranch (branch suc) {
-        if (branchesCount < MAXSUC-1) {
+        if (branchesCount < MAXBRANCH-1) {
             branches[branchesCount] = suc;
             branchesCount ++;
         } else {
@@ -39,15 +63,33 @@ public class central {
     }
 
     public void loadProduct(int posProd, int cantProd) {
-        matProd[ROWPROD][posProd] += cantProd;
+        if (cantProd > 0) {
+            matProd[ROWPROD][posProd] += cantProd;
+        } else {
+            System.out.println("El mínimo de productos a cargar es uno");
+        }
     }
 
     public void setMinOfProd (int posProd, int min) {
-        matProd[ROWMINPROD][posProd] = min;
+        if (min > -1) {
+            matProd[ROWMINPROD][posProd] = min;
+        } else {
+            System.out.println("El mínimo de productos debe ser mayor o igual a cero");
+        }
     }
 
     public void setMaxOfProd (int posProd, int max) {
-        matProd[ROWMAXPROD][posProd] = max;
+
+        if (posProd >= 0 && posProd < MAXPRODUCTS) {
+            if (max > matProd[ROWMINPROD][posProd]) {
+                matProd[ROWMAXPROD][posProd] = max;
+            } else {
+                System.out.println("El máximo de poductos debe ser mayor al mínimo");
+            }
+        } else {
+            System.out.println("El número de producto ingresado esta fuera de los posibles");
+
+        }
     }
 
     public void setAllMinMax (int min, int max) {

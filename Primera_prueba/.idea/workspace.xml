@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a69098-185c-45ce-9153-e1104ac4b17e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/seg_parcial2019.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DistribuidorMayorista/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DistribuidorMayorista/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DistribuidorMayorista/out/production/DistribuidorMayorista/branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DistribuidorMayorista/out/production/DistribuidorMayorista/branch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DistribuidorMayorista/out/production/DistribuidorMayorista/central.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DistribuidorMayorista/out/production/DistribuidorMayorista/central.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DistribuidorMayorista/src/branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DistribuidorMayorista/src/branch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DistribuidorMayorista/src/central.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DistribuidorMayorista/src/central.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DistribuidorMayorista/src/network.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DistribuidorMayorista/src/network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Primera_prueba/clase8tp1ej09.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Primera_prueba/clase8tp1ej09.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clase8tp1ej09.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clase8tp1ej09.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +18,7 @@
     <session id="-1602460537">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.17" value="4" />
           <entry key="project.open.time.18" value="6" />
           <entry key="project.open.time.19" value="4" />
@@ -247,7 +238,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="252" />
     <option name="y" value="394" />
     <option name="width" value="1316" />
@@ -283,7 +274,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560452902259" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560464663172" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -430,18 +421,18 @@
       <workItem from="1559674725329" duration="112000" />
       <workItem from="1560288727332" duration="3352000" />
       <workItem from="1560347170982" duration="4710000" />
-      <workItem from="1560445994634" duration="4566000" />
+      <workItem from="1560445994634" duration="4574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251554000" />
+    <option name="totallyTimeSpent" value="251562000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="252" y="394" width="1316" height="621" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46341464" visible="true" weight="0.121259846" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46341464" visible="true" weight="0.11666667" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -450,7 +441,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.351626" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28407225" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924242" weight="0.33333334" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -527,22 +518,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/seg_parcial2019.java</url>
-          <line>32</line>
-          <properties class="seg_parcial2019" method="borrar_sec">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/seg_parcial2019.java</url>
-          <line>48</line>
-          <properties class="seg_parcial2019" method="borrar">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

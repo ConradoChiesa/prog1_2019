@@ -22,6 +22,7 @@ public class branch {
         }
     }
 
+    public int [][] getMat() { return matProdSuc; }
     public void printMatSuc () {
         System.out.println("Matriz completa de la sucursal ");
         for (int i = 0; i < central.MAXPRODUCTS; i++) {

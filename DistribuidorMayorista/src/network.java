@@ -31,13 +31,14 @@ public class network {
         uno.startProd(1, 0, 20, 60);
         uno.addProducts(1, 60);
         central.createBranch(uno);
-        uno.listProds();
+//        uno.listProds();
         branch dos = new branch("DOS");
         dos.startProd(3, 0, 20, 60);
         dos.startProd(1, 30, 20, 60);
         dos.addProducts(1, 60);
         central.createBranch(dos);
-        dos.listProds();
+//        dos.listProds();
+//        central.listAllBranchesProds();
         /*
         branch tres = new branch();
         tres.startProd(1, 0, 20, 60);
