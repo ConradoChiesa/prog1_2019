@@ -16,14 +16,9 @@ public class network {
 //        central.setMaxOfProd(4,100);
         central.setAllMinMax(15,50);
         central.loadProduct(0, 50);
-        central.loadProduct(2, 40);
-        central.loadProduct(4, 80);
+        central.loadProduct(2, 50);
+        central.loadProduct(4, 60);
         central.printMatProd();
-        central.setMinOfProd(0,10);
-        central.setMinOfProd(1,10);
-        central.setMinOfProd(2,10);
-        central.setMinOfProd(3,10);
-        central.setMinOfProd(4,10);
         central.loadProduct(2, 20);
         central.sellProd(2,42);
         central.printMatProd();
@@ -38,7 +33,7 @@ public class network {
         dos.addProducts(1, 60);
         central.createBranch(dos);
 //        dos.listProds();
-//        central.listAllBranchesProds();
+        central.listAllBranchesProds();
         /*
         branch tres = new branch();
         tres.startProd(1, 0, 20, 60);

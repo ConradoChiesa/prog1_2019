@@ -24,33 +24,13 @@ public class central {
         }
     }
 
-    //Esta funcion me imprime cualquier cosa
-    public void printMat (int mat[][]) {
-        for (int i = 0; i < central.MAXPRODUCTS; i++) {
-        System.out.println("Pruductos En "+ i );
-            if (mat[central.ROWPROD][i] != -1) {
-                System.out.print("Id producto -> " + i + " Cantidad -> " + mat[central.ROWPROD][i] + ", Mínimo -> "+ mat[central.ROWMINPROD][i] + ", Máximo -> "+ mat[central.ROWMAXPROD][i]);
-                System.out.println("");
-            }
-        }
-    }
-
-    public void printBranchProd(){
-        for (int i = 0; i<branchesCount; i++)
-            System.out.println("En la sucursal "+i);
-    }
-    // Esta funcion no se si esta bien.
-    public branch getMat(int pos) { return branches[pos]; }
-
     public void listAllBranchesProds() {
 
         for (int i = 0; i < branchesCount; i++) {
-            printMat(getMat(i).getMat());
-
+            branches[i].listProds();
         }
     }
-    
-    
+
     //METODOS SETTER
 
     public void createBranch (branch suc) {
@@ -63,10 +43,14 @@ public class central {
     }
 
     public void loadProduct(int posProd, int cantProd) {
-        if (cantProd > 0) {
-            matProd[ROWPROD][posProd] += cantProd;
+        if (cantProd < 0 || (cantProd + matProd[ROWPROD][posProd]) > matProd[ROWMAXPROD][posProd]) {
+            if (cantProd + matProd[ROWPROD][posProd] > matProd[ROWMAXPROD][posProd]) {
+                System.out.println("La cantidad de productos supera el máximo establecido");
+            } else {
+                System.out.println("El mínimo de productos a cargar es uno");
+            }
         } else {
-            System.out.println("El mínimo de productos a cargar es uno");
+            matProd[ROWPROD][posProd] += cantProd;
         }
     }
 
@@ -114,4 +98,23 @@ public class central {
             }
         }
     }
+
+    /*-----------------------------------------------------------*/
+    //Esta funcion me imprime cualquier cosa
+    public void printMat (int mat[][]) {
+        for (int i = 0; i < central.MAXPRODUCTS; i++) {
+            System.out.println("Pruductos En "+ i );
+            if (mat[central.ROWPROD][i] != -1) {
+                System.out.print("Id producto -> " + i + " Cantidad -> " + mat[central.ROWPROD][i] + ", Mínimo -> "+ mat[central.ROWMINPROD][i] + ", Máximo -> "+ mat[central.ROWMAXPROD][i]);
+                System.out.println("");
+            }
+        }
+    }
+
+    public void printBranchProd(){
+        for (int i = 0; i<branchesCount; i++)
+            System.out.println("En la sucursal "+i);
+    }
+
 }
+

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc10c36-96db-4b48-8dd3-386734e4e61a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/branch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/central.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/central.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/network.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/network.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/branch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/central.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/central.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Primera_prueba/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Primera_prueba/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,13 +42,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="4202" />
+          <entry key="java" value="4620" />
           <entry key="txt" value="241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4202" />
+          <entry key="JAVA" value="4620" />
           <entry key="PLAIN_TEXT" value="250" />
         </counts>
       </usages-collector>
@@ -64,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/central.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state relative-caret-position="254">
+              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -73,8 +68,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/branch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="60" column="28" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="28" />
+            <state relative-caret-position="170">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding>
+                <element signature="e#2823#2824#0" expanded="true" />
+                <element signature="e#2856#2857#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+            <state relative-caret-position="393">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -117,9 +116,9 @@
         <option value="$PROJECT_DIR$/src/sucursal.java" />
         <option value="$PROJECT_DIR$/src/redMayorista.java" />
         <option value="$PROJECT_DIR$/src/casaCentral.java" />
+        <option value="$PROJECT_DIR$/src/network.java" />
         <option value="$PROJECT_DIR$/src/branch.java" />
         <option value="$PROJECT_DIR$/src/central.java" />
-        <option value="$PROJECT_DIR$/src/network.java" />
       </list>
     </option>
   </component>
@@ -216,7 +215,7 @@
       <workItem from="1560445992516" duration="1593000" />
       <workItem from="1560474810506" duration="2491000" />
       <workItem from="1560609677778" duration="4643000" />
-      <workItem from="1560618447838" duration="846000" />
+      <workItem from="1560618447838" duration="7067000" />
     </task>
     <task id="LOCAL-00001" summary="Funciones para cargar la matriz de productos por producto maximos y minimos y todos, también las funciones para hacerlo por cada uno y la funcion para cargar la cantidad de productos (sin test). También se mejoro la impresion de la matriz.">
       <created>1559945459218</created>
@@ -229,7 +228,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62211000" />
+    <option name="totallyTimeSpent" value="68432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="738" extended-state="6" />
@@ -244,8 +243,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38916257" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6272578" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39901477" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -279,22 +278,26 @@
     <entry file="file://$PROJECT_DIR$/src/stock.java" />
     <entry file="file://$PROJECT_DIR$/src/branch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="60" column="28" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="28" />
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/central.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="254">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        <state relative-caret-position="393">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
