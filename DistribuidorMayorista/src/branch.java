@@ -44,7 +44,7 @@ public class branch {
 
         if (matProdSuc[central.ROWPROD][posProd] != -1 && matProdSuc[central.ROWMINPROD][posProd] != -1) {
             if ((matProdSuc[central.ROWPROD][posProd] + reload) > matProdSuc[central.ROWMAXPROD][posProd]) {
-                System.out.println("No hay lugar para tantos productos");
+                System.out.println("En la sucursal "+branchName+" No hay lugar para tantos productos");
             } else {
                 matProdSuc[central.ROWPROD][posProd] += reload;
             }
@@ -60,7 +60,18 @@ public class branch {
             System.out.println("EL producto no esta inicializado");
         }   */
     }
-
+    public void sellProd(int posProd, int selled) {
+        if (matProdSuc[central.ROWPROD][posProd] != -1) {
+            if (matProdSuc[central.ROWPROD][posProd] >= selled) {
+                matProdSuc[central.ROWPROD][posProd] -= selled;
+            } else {
+                System.out.println("No hay suficientes productos para realizar la venta.\n" +
+                        "Solo puede venderse " + matProdSuc[central.ROWPROD][posProd]);
+            }
+        } else {
+            System.out.println("La sucursal "+ branchName + " no opera este producto");
+        }
+    }
     public void startProd (int posProd, int prods, int min, int max) {
         matProdSuc[central.ROWPROD][posProd] = prods;
         matProdSuc[central.ROWMINPROD][posProd] = min;
@@ -69,5 +80,37 @@ public class branch {
 
     public String branchName(String branchName) {
         return branchName;
+    }
+
+    public void listUnstock() {
+        int countReload;
+        for (int i = 0; i < central.MAXPRODUCTS; i++) {
+            if (evaluateProd(i)) {
+                countReload = ProdToReload(i);
+
+                System.out.println("En la sucursal "+ branchName +" el producto "+ i +" Se necesita completar con "+ countReload);
+            }
+        }
+    }
+
+    private int ProdToReload(int prod) {
+        int result = ((matProdSuc[central.ROWMINPROD][prod] + matProdSuc[central.ROWMAXPROD][prod]) / 2) - matProdSuc[central.ROWPROD][prod];
+        return result;
+    }
+
+    public void reloadIfPosible() {
+        int countReload;
+        for (int i = 0; i < central.MAXPRODUCTS; i++) {
+            if (evaluateProd(i)) {
+                countReload = ProdToReload(i);
+                System.out.println("En la sucursal "+ branchName +" el producto "+ i +" Se necesita completar con "+ countReload);
+            }
+        }
+    }
+    private boolean evaluateProd(int prod) { //evalua si el producto esta po debajo del mínimo
+        boolean valid = true;
+            if (matProdSuc[central.ROWPROD][prod] == -1 || matProdSuc[central.ROWPROD][prod] > matProdSuc[central.ROWMINPROD][prod])
+                valid = false;
+        return valid;
     }
 }

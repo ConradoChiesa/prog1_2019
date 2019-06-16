@@ -14,7 +14,7 @@ public class network {
 //        central.setMaxOfProd(3,100);
 //        central.setMinOfProd(4,20);
 //        central.setMaxOfProd(4,100);
-        central.setAllMinMax(15,50);
+        central.setAllMinMax(50,250);
         central.loadProduct(0, 50);
         central.loadProduct(2, 50);
         central.loadProduct(4, 60);
@@ -28,65 +28,61 @@ public class network {
         central.createBranch(uno);
 //        uno.listProds();
         branch dos = new branch("DOS");
-        dos.startProd(3, 0, 20, 60);
-        dos.startProd(1, 30, 20, 60);
-        dos.addProducts(1, 60);
+        dos.startProd(3, 30, 20, 50);
+        dos.startProd(1, 16, 20, 60);
+        dos.addProducts(1, 20);
         central.createBranch(dos);
+        dos.sellProd(3,5);
 //        dos.listProds();
-        central.listAllBranchesProds();
-        /*
-        branch tres = new branch();
-        tres.startProd(1, 0, 20, 60);
-        tres.addProducts(1, 60);
+
+        branch tres = new branch("tres");
         central.createBranch(tres);
-        tres.listProds();
+        tres.startProd(1, 0, 20, 60);
+        tres.addProducts(2, 50);
 
-        branch cuatro = new branch();
-        cuatro.startProd(1, 0, 20, 60);
-        cuatro.addProducts(1, 60);
+        branch cuatro = new branch("cuatro");
         central.createBranch(cuatro);
-        cuatro.listProds();
+        cuatro.startProd(1, 0, 20, 60);
+        cuatro.addProducts(1, 10);
 
-        branch cinco = new branch();
+        branch cinco = new branch("cinco");
+        central.createBranch(cinco);
         cinco.startProd(1, 0, 20, 60);
         cinco.addProducts(1, 60);
-                central.createBranch(cinco);
-        cinco.listProds();
 
-                       branch seis = new branch();
+        branch seis = new branch("seis");
+        central.createBranch(seis);
         seis.startProd(1, 0, 20, 60);
         seis.addProducts(1, 60);
-                central.createBranch(seis);
-        seis.listProds();
 
-                        branch siete = new branch();
+        branch siete = new branch("siete");
+        central.createBranch(siete);
         siete.startProd(1, 0, 20, 60);
         siete.addProducts(1, 60);
-                central.createBranch(siete);
-        siete.listProds();
 
-                       branch ocho = new branch();
+
+        branch ocho = new branch("ocho");
+        central.createBranch(ocho);
         ocho.startProd(1, 0, 20, 60);
         ocho.addProducts(1, 60);
-                central.createBranch(ocho);
-        ocho.listProds();
 
-                        branch nueve = new branch();
+
+        branch nueve = new branch("nueve");
+        central.createBranch(nueve);
         nueve.startProd(1, 0, 20, 60);
         nueve.addProducts(1, 60);
-                central.createBranch(nueve);
-        nueve.listProds();
 
-                        branch diez = new branch();
+
+        branch diez = new branch("diez");
+        central.createBranch(diez);
         diez.startProd(1, 0, 20, 60);
         diez.addProducts(1, 60);
-                central.createBranch(diez);
-        diez.listProds();
 
-        branch once = new branch();
+        branch once = new branch("once");
+        central.createBranch(once);
         once.startProd(1, 0, 20, 60);
         once.addProducts(1, 60);
-        central.createBranch(once);
-        once.listProds();*/
+        central.listNetworkStatus();
+        central.listBranchUnstockProds();
     }
 }

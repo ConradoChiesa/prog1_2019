@@ -3,7 +3,7 @@ public class central {
 
     final static int MAXPRODUCTS = 5; // Maximo de productos distintos o columnas de la matriz
     final static int MAXROW = 3; // Maximo de filas
-    final static int MAXBRANCH = 10; // Maximo de sucursales
+    private final static int MAXBRANCH = 10; // Maximo de sucursales
     final static int ROWPROD = 0; // Fila de cantidad de productos
     final static int ROWMINPROD = 1; // Fila cantidad minima de productos
     final static int ROWMAXPROD = 2; // Fila cantidad maxima de productos
@@ -24,18 +24,29 @@ public class central {
         }
     }
 
-    public void listAllBranchesProds() {
-
+    public void listNetworkStatus() {
+        printMatProd();
         for (int i = 0; i < branchesCount; i++) {
             branches[i].listProds();
         }
     }
 
-    //METODOS SETTER
+    public void listBranchUnstockProds() {
+        for (int i = 0; i < branchesCount; i++) {
+            branches[i].listUnstock();
+        }
+    }
 
+    //METODOS SETTER
+    public void reloadbranches() {
+        for (int i = 0; i < branchesCount; i++) {
+            branches[i].reloadIfPosible();
+        }
+    }
     public void createBranch (branch suc) {
-        if (branchesCount < MAXBRANCH-1) {
+        if (branchesCount < MAXBRANCH) {
             branches[branchesCount] = suc;
+            System.out.println("Sucursal "+branchesCount+" creada con exito");
             branchesCount ++;
         } else {
             System.out.println("No se pueden crear más sucursales");
