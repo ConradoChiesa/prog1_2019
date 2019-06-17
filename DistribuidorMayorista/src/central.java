@@ -43,7 +43,7 @@ public class central {
         int reload, prod;
         for (int i = 0; i < branchesCount; i++) {
             prod = branches[i].reloadIfPosibleProd();
-            if (prod != -1) {
+            while (prod != -1) {
                 reload = 0;
                 reload = branches[i].prodToReload(prod);
                 if (reload < matProd[ROWPROD][prod]) {
@@ -52,6 +52,7 @@ public class central {
                 } else {
                     System.out.println("La central no dispone de tantos productos, ID prod = "+ prod);
                 }
+                prod = branches[i].reloadIfPosibleProd();
             }
         }
     }

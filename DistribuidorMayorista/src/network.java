@@ -3,6 +3,9 @@ public class network {
 
     public static void main(String[] args) {
         central central = new central();
+        central elMayonesa = new central();
+        elMayonesa.setAllMinMax(100, 500);
+
 //        central.printMatProd();
 //        central.setMinOfProd(0,20);
 //        central.setMaxOfProd(0,100);
@@ -46,49 +49,58 @@ public class network {
         central.createBranch(cuatro);
         cuatro.startProd(1, 0, 20, 60);
         cuatro.addProducts(1, 10);
-/*
+
         branch cinco = new branch("cinco");
-        central.createBranch(cinco);
-        cinco.startProd(1, 0, 20, 60);
-        cinco.addProducts(1, 60);
+        elMayonesa.createBranch(cinco);
+        cinco.startProd(1, 0, 10, 30);
+        cinco.startProd(2, 0, 10, 30);
+        cinco.startProd(3, 0, 10, 30);
 
         branch seis = new branch("seis");
-        central.createBranch(seis);
-        seis.startProd(1, 0, 20, 60);
-        seis.addProducts(1, 60);
+        elMayonesa.createBranch(seis);
+        seis.startProd(0, 0, 10, 30);
+        seis.startProd(3, 0, 10, 30);
+        seis.startProd(4, 0, 10, 30);
 
         branch siete = new branch("siete");
-        central.createBranch(siete);
-        siete.startProd(1, 0, 20, 60);
-        siete.addProducts(1, 60);
+        elMayonesa.createBranch(siete);
+        siete.startProd(1, 0, 10, 30);
+        siete.startProd(2, 0, 10, 30);
+        siete.addProducts(1, 8);
 
 
         branch ocho = new branch("ocho");
-        central.createBranch(ocho);
-        ocho.startProd(1, 0, 20, 60);
-        ocho.addProducts(1, 60);
+        elMayonesa.createBranch(ocho);
+        ocho.startProd(4, 0, 10, 20);
+        ocho.startProd(3, 0, 10, 20);
 
 
         branch nueve = new branch("nueve");
-        central.createBranch(nueve);
-        nueve.startProd(1, 0, 20, 60);
-        nueve.addProducts(1, 60);
+        elMayonesa.createBranch(nueve);
+        nueve.startProd(2, 0, 10, 30);
+        nueve.startProd(4, 0, 10, 30);
 
 
         branch diez = new branch("diez");
-        central.createBranch(diez);
-        diez.startProd(1, 0, 20, 60);
-        diez.addProducts(1, 60);
+        elMayonesa.createBranch(diez);
+        diez.startProd(0, 0, 10, 30);
+        diez.startProd(3, 0, 10, 30);
 
         branch once = new branch("once");
-        central.createBranch(once);
-        once.startProd(1, 0, 20, 60);
-        once.addProducts(1, 60);
-        */
-central.loadProduct(1, 78);
+        elMayonesa.createBranch(once);
+        once.startProd(3, 0, 10, 20);
+        central.loadProduct(1, 78);
         central.listNetworkStatus();
         central.reloadbranches();
         central.listNetworkStatus();
         central.getMaxCountProd(1);
+        elMayonesa.loadProduct(0,300);
+        elMayonesa.loadProduct(1,300);
+        elMayonesa.loadProduct(2,300);
+        elMayonesa.loadProduct(3,300);
+        elMayonesa.loadProduct(4,300);
+        elMayonesa.reloadbranches();
+        elMayonesa.listNetworkStatus();
+
     }
 }
