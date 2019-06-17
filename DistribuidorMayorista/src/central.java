@@ -42,13 +42,15 @@ public class central {
     public void reloadbranches() {
         int reload, prod;
         for (int i = 0; i < branchesCount; i++) {
-            reload = 0;
             prod = branches[i].reloadIfPosibleProd();
             if (prod != -1) {
+                reload = 0;
                 reload = branches[i].prodToReload(prod);
                 if (reload < matProd[ROWPROD][prod]) {
                     matProd[ROWPROD][prod] -= reload;
                     branches[i].reload(prod, reload);
+                } else {
+                    System.out.println("La central no dispone de tantos productos, ID prod = "+ prod);
                 }
             }
         }
@@ -120,22 +122,12 @@ public class central {
         }
     }
 
-    /*-----------------------------------------------------------*/
-    //Esta funcion me imprime cualquier cosa
-    public void printMat (int mat[][]) {
-        for (int i = 0; i < central.MAXPRODUCTS; i++) {
-            System.out.println("Pruductos En "+ i );
-            if (mat[central.ROWPROD][i] != -1) {
-                System.out.print("Id producto -> " + i + " Cantidad -> " + mat[central.ROWPROD][i] + ", Mínimo -> "+ mat[central.ROWMINPROD][i] + ", Máximo -> "+ mat[central.ROWMAXPROD][i]);
-                System.out.println("");
-            }
+    public void getMaxCountProd(int prod) {
+        int maxToReload = matProd[ROWMAXPROD][prod] - matProd[ROWPROD][prod];
+        for (int i = 0; i < branchesCount; i++) {
+            maxToReload += branches[i].maxReload(prod);
         }
+        System.out.println("Se pueden stokear del producto "+ prod + " " + maxToReload);
     }
-
-    public void printBranchProd(){
-        for (int i = 0; i<branchesCount; i++)
-            System.out.println("En la sucursal "+i);
-    }
-
 }
 

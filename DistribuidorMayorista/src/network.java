@@ -16,7 +16,7 @@ public class network {
 //        central.setMaxOfProd(4,100);
         central.setAllMinMax(50,250);
         central.loadProduct(0, 150);
-        central.loadProduct(1, 150);
+        central.loadProduct(1, 10);
         central.loadProduct(2, 150);
         central.loadProduct(3, 150);
         central.loadProduct(4, 160);
@@ -85,8 +85,10 @@ public class network {
         once.startProd(1, 0, 20, 60);
         once.addProducts(1, 60);
         */
+central.loadProduct(1, 78);
         central.listNetworkStatus();
         central.reloadbranches();
         central.listNetworkStatus();
+        central.getMaxCountProd(1);
     }
 }

@@ -21,15 +21,7 @@ public class branch {
             }
         }
     }
-//    public void listUnstock() {
-//        int countReload;
-//        for (int i = 0; i < central.MAXPRODUCTS; i++) {
-//            if (evaluateProd(i)) {
-//                countReload = prodToReload(i);
-//                System.out.println("En la sucursal "+ branchName +" el producto "+ i +" Se necesita completar con "+ countReload);
-//            }
-//        }
-//    }
+
     private boolean evaluateProd(int prod) { //evalua si el producto lo opera la sucursal y esta por debajo del mínimo
         boolean valid = true;
         if (matProdSuc[central.ROWPROD][prod] == -1 || matProdSuc[central.ROWPROD][prod] > matProdSuc[central.ROWMINPROD][prod])
@@ -37,17 +29,9 @@ public class branch {
         return valid;
     }
 
-//    public int [][] getMat() { return matProdSuc; }
-//    public void printMatSuc () {
-//        System.out.println("Matriz completa de la sucursal ");
-//        for (int i = 0; i < central.MAXPRODUCTS; i++) {
-//            System.out.print("Id producto -> " + i + " Cantidad -> " + matProdSuc[central.ROWPROD][i] + ", Mínimo -> "+ matProdSuc[central.ROWMINPROD][i] + ", Máximo -> "+ matProdSuc[central.ROWMAXPROD][i]);
-//            System.out.println("");
-//        }
-//    }
 
     //METODOS SETTER
-    public void inticMat(int [][] mat) {
+    private void inticMat(int [][] mat) {
         for (int i = 0; i < central.MAXROW; i++) {
             for (int j = 0; j < central.MAXPRODUCTS; j++) {
                 mat[i][j] = -1;
@@ -64,16 +48,6 @@ public class branch {
                 matProdSuc[central.ROWPROD][posProd] += reload;
             }
         }
-
-/*        if (matProdSuc[central.ROWPROD][posProd] != -1 && matProdSuc[central.ROWMINPROD][posProd] != -1) {
-            if ((matProdSuc[central.ROWPROD][posProd] += reload) > matProdSuc[central.ROWMAXPROD][posProd]) {
-                matProdSuc[central.ROWPROD][posProd] += reload;
-            } else {
-                System.out.println("No hay lugar para tantos productos");
-            }
-        } else {
-            System.out.println("EL producto no esta inicializado");
-        }   */
     }
     public void sellProd(int posProd, int selled) {
         if (matProdSuc[central.ROWPROD][posProd] != -1) {
@@ -93,12 +67,6 @@ public class branch {
         matProdSuc[central.ROWMAXPROD][posProd] = max;
     }
 
-    public String branchName(String branchName) {
-        return branchName;
-    }
-
-
-
     public int prodToReload(int prod) {
         int result = ((matProdSuc[central.ROWMINPROD][prod] + matProdSuc[central.ROWMAXPROD][prod]) / 2) - matProdSuc[central.ROWPROD][prod];
         return result;
@@ -117,4 +85,38 @@ public class branch {
     public void reload(int prod, int reload) {
         matProdSuc[central.ROWPROD][prod] += reload;
     }
+
+    public int maxReload(int prod) {
+        int count = 0;
+        count = matProdSuc[central.ROWMAXPROD][prod] - matProdSuc[central.ROWPROD][prod];
+        return count;
+    }
 }
+
+
+/*  NUNCA USADAS
+    public String branchName(String branchName) {
+        return branchName;
+    }
+
+    public int [][] getMat() { return matProdSuc; }
+    public void printMatSuc () {
+        System.out.println("Matriz completa de la sucursal ");
+        for (int i = 0; i < central.MAXPRODUCTS; i++) {
+            System.out.print("Id producto -> " + i + " Cantidad -> " + matProdSuc[central.ROWPROD][i] + ", Mínimo -> "+ matProdSuc[central.ROWMINPROD][i] + ", Máximo -> "+ matProdSuc[central.ROWMAXPROD][i]);
+            System.out.println("");
+        }
+    }
+
+        public void listUnstock() {
+        int countReload;
+        for (int i = 0; i < central.MAXPRODUCTS; i++) {
+            if (evaluateProd(i)) {
+                countReload = prodToReload(i);
+                System.out.println("En la sucursal "+ branchName +" el producto "+ i +" Se necesita completar con "+ countReload);
+            }
+        }
+    }
+
+
+*/
