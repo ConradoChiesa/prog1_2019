@@ -16,6 +16,7 @@ public class central {
         setInicMat(matProd);
     }
 
+
     public void printMatProd () {
         System.out.println("Pruductos En Central");
         for (int j = 0; j < central.MAXPRODUCTS; j++) {
@@ -31,16 +32,25 @@ public class central {
         }
     }
 
-    public void listBranchUnstockProds() {
-        for (int i = 0; i < branchesCount; i++) {
-            branches[i].listUnstock();
-        }
-    }
+//    public void listBranchUnstockProds() {
+//        for (int i = 0; i < branchesCount; i++) {
+//            branches[i].listUnstock();
+//        }
+//    }
 
     //METODOS SETTER
     public void reloadbranches() {
+        int reload, prod;
         for (int i = 0; i < branchesCount; i++) {
-            branches[i].reloadIfPosible();
+            reload = 0;
+            prod = branches[i].reloadIfPosibleProd();
+            if (prod != -1) {
+                reload = branches[i].prodToReload(prod);
+                if (reload < matProd[ROWPROD][prod]) {
+                    matProd[ROWPROD][prod] -= reload;
+                    branches[i].reload(prod, reload);
+                }
+            }
         }
     }
     public void createBranch (branch suc) {
@@ -65,7 +75,7 @@ public class central {
         }
     }
 
-    public void setMinOfProd (int posProd, int min) {
+    public void setMinOfProd(int posProd, int min) {
         if (min > -1) {
             matProd[ROWMINPROD][posProd] = min;
         } else {
@@ -73,7 +83,7 @@ public class central {
         }
     }
 
-    public void setMaxOfProd (int posProd, int max) {
+    public void setMaxOfProd(int posProd, int max) {
 
         if (posProd >= 0 && posProd < MAXPRODUCTS) {
             if (max > matProd[ROWMINPROD][posProd]) {

@@ -21,6 +21,21 @@ public class branch {
             }
         }
     }
+//    public void listUnstock() {
+//        int countReload;
+//        for (int i = 0; i < central.MAXPRODUCTS; i++) {
+//            if (evaluateProd(i)) {
+//                countReload = prodToReload(i);
+//                System.out.println("En la sucursal "+ branchName +" el producto "+ i +" Se necesita completar con "+ countReload);
+//            }
+//        }
+//    }
+    private boolean evaluateProd(int prod) { //evalua si el producto lo opera la sucursal y esta por debajo del mínimo
+        boolean valid = true;
+        if (matProdSuc[central.ROWPROD][prod] == -1 || matProdSuc[central.ROWPROD][prod] > matProdSuc[central.ROWMINPROD][prod])
+            valid = false;
+        return valid;
+    }
 
 //    public int [][] getMat() { return matProdSuc; }
 //    public void printMatSuc () {
@@ -82,35 +97,24 @@ public class branch {
         return branchName;
     }
 
-    public void listUnstock() {
-        int countReload;
-        for (int i = 0; i < central.MAXPRODUCTS; i++) {
-            if (evaluateProd(i)) {
-                countReload = ProdToReload(i);
 
-                System.out.println("En la sucursal "+ branchName +" el producto "+ i +" Se necesita completar con "+ countReload);
-            }
-        }
-    }
 
-    private int ProdToReload(int prod) {
+    public int prodToReload(int prod) {
         int result = ((matProdSuc[central.ROWMINPROD][prod] + matProdSuc[central.ROWMAXPROD][prod]) / 2) - matProdSuc[central.ROWPROD][prod];
         return result;
     }
 
-    public void reloadIfPosible() {
-        int countReload;
+    public int reloadIfPosibleProd() {
         for (int i = 0; i < central.MAXPRODUCTS; i++) {
             if (evaluateProd(i)) {
-                countReload = ProdToReload(i);
-                System.out.println("En la sucursal "+ branchName +" el producto "+ i +" Se necesita completar con "+ countReload);
+                return i;
             }
         }
+        return -1;
     }
-    private boolean evaluateProd(int prod) { //evalua si el producto esta po debajo del mínimo
-        boolean valid = true;
-            if (matProdSuc[central.ROWPROD][prod] == -1 || matProdSuc[central.ROWPROD][prod] > matProdSuc[central.ROWMINPROD][prod])
-                valid = false;
-        return valid;
+
+
+    public void reload(int prod, int reload) {
+        matProdSuc[central.ROWPROD][prod] += reload;
     }
 }
