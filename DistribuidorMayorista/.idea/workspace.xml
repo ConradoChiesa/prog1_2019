@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc10c36-96db-4b48-8dd3-386734e4e61a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/branch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/central.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/central.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DistribuidorMayorista/network.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistribuidorMayorista/network.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/branch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/central.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/central.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network.java" afterDir="false" />
@@ -48,13 +44,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="8276" />
+          <entry key="java" value="8744" />
           <entry key="txt" value="241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8276" />
+          <entry key="JAVA" value="8744" />
           <entry key="PLAIN_TEXT" value="250" />
         </counts>
       </usages-collector>
@@ -65,17 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/central.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="53" column="61" lean-forward="true" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/network.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="1785">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
             </state>
           </provider>
         </entry>
@@ -83,8 +70,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/branch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+            <state relative-caret-position="198">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/network.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
             </state>
           </provider>
         </entry>
@@ -122,8 +118,8 @@
         <option value="$PROJECT_DIR$/src/sucursal.java" />
         <option value="$PROJECT_DIR$/src/redMayorista.java" />
         <option value="$PROJECT_DIR$/src/casaCentral.java" />
-        <option value="$PROJECT_DIR$/src/branch.java" />
         <option value="$PROJECT_DIR$/src/central.java" />
+        <option value="$PROJECT_DIR$/src/branch.java" />
         <option value="$PROJECT_DIR$/src/network.java" />
       </list>
     </option>
@@ -166,7 +162,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560839311362" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560844026783" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -224,7 +220,7 @@
       <workItem from="1560725556750" duration="7984000" />
       <workItem from="1560807294934" duration="12101000" />
       <workItem from="1560827644280" duration="3608000" />
-      <workItem from="1560837428436" duration="1881000" />
+      <workItem from="1560837428436" duration="6343000" />
     </task>
     <task id="LOCAL-00001" summary="Funciones para cargar la matriz de productos por producto maximos y minimos y todos, también las funciones para hacerlo por cada uno y la funcion para cargar la cantidad de productos (sin test). También se mejoro la impresion de la matriz.">
       <created>1559945459218</created>
@@ -237,7 +233,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102344000" />
+    <option name="totallyTimeSpent" value="106806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="690" extended-state="6" />
@@ -252,8 +248,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4958949" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6156406" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46524063" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48306596" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -283,26 +279,54 @@
     <MESSAGE value="Funciones para cargar la matriz de productos por producto maximos y minimos y todos, también las funciones para hacerlo por cada uno y la funcion para cargar la cantidad de productos (sin test). También se mejoro la impresion de la matriz." />
     <option name="LAST_COMMIT_MESSAGE" value="Funciones para cargar la matriz de productos por producto maximos y minimos y todos, también las funciones para hacerlo por cada uno y la funcion para cargar la cantidad de productos (sin test). También se mejoro la impresion de la matriz." />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/branch.java</url>
+          <line>50</line>
+          <properties class="branch" method="loadProduct">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/central.java</url>
+          <line>97</line>
+          <properties class="central" method="loadProduct">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/central.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/stock.java" />
     <entry file="file://$PROJECT_DIR$/src/branch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+        <state relative-caret-position="198">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/central.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="53" column="61" lean-forward="true" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+        <state relative-caret-position="1785">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="1734">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>

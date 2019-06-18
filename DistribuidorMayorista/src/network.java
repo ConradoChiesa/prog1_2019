@@ -33,9 +33,9 @@ public class network {
         central.sellProd(2,42);
         central.printMatProd();
         branch uno = new branch("UNO");
+        central.createBranch(uno);
         uno.startProd(1, 0, 20, 60);
         uno.loadProduct(1, 60);
-        central.createBranch(uno);
 //        uno.listProds();
         branch dos = new branch("DOS");
         central.createBranch(dos);
@@ -47,12 +47,15 @@ public class network {
 
         branch tres = new branch("tres");
         central.createBranch(tres);
-        tres.startProd(1, 0, 20, 60);
-        tres.loadProduct(2, 50);
+        tres.startProd(0, 4, 20, 60);
+        tres.startProd(1, 3, 20, 60);
+        tres.startProd(2, 2, 20, 60);
+        tres.loadProduct(2, 15);
 
         branch cuatro = new branch("cuatro");
         central.createBranch(cuatro);
-        cuatro.startProd(1, 0, 20, 60);
+        cuatro.startProd(1, 32, 20, 60);
+        cuatro.startProd(4, 12, 20, 60);
         cuatro.loadProduct(1, 10);
         cuatro.loadProduct(3, 45);
 //        branch cinco = new branch("cinco");
@@ -93,16 +96,17 @@ public class network {
 //        diez.startProd(0, 0, 10, 30);
 //        diez.startProd(3, 0, 10, 30);
 //        diez.reload(3, 45);
+//        branch once = new branch("once");
+//        once.startProd(3, 0, 10, 20);
 
-        cuatro.sellProd(2, 8);
-
-        branch once = new branch("once");
-        once.startProd(3, 0, 10, 20);
-        central.loadProduct(1, 78);
+        cuatro.sellProd(1, 8);
+        cuatro.sellProd(3, 18);
+        central.maxLoadProd(1);
         central.listNetworkStatus();
+        central.fullstockProd(1);
+        central.loadProduct(1, 78);
         central.reloadbranches();
         central.listNetworkStatus();
-        central.getMaxCountProd(1);
 
 
     }

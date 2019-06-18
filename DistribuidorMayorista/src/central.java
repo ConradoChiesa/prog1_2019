@@ -31,19 +31,41 @@ public class central {
             branches[i].listProds();
         }
     }
+    public void maxLoadProd (int prod) {
+        int count = getMaxCountProd(prod);
+        System.out.println("Se pueden stokear del producto "+ prod + " " + count);
+    }
 
-    public void getMaxCountProd(int prod) { // Devuelve cuanto se puede stockear como máximo de un producto en toda la red
+    private int getMaxCountProd(int prod) { // Devuelve cuanto se puede stockear como máximo de un producto en toda la red
         int maxToReload = matProd[ROWMAXPROD][prod] - matProd[ROWPROD][prod];
         for (int i = 0; i < branchesCount; i++) {
             maxToReload += branches[i].maxReload(prod);
         }
-        System.out.println("Se pueden stokear del producto "+ prod + " " + maxToReload);
-//        offerReload(prod, maxToReload);
+        return maxToReload;
+    }
+
+    private int maxReload(int prod) { //Devuelve el máximo a recargar de un producto
+        int count = 0;
+        count = matProd[ROWMAXPROD][prod] - matProd[ROWPROD][prod];
+        return count;
     }
 
     //METODOS SETTER
 
-    public void reloadbranches() { // Recarga todas las sucursales con productos
+    public void fullstockProd(int posProd) {
+        int maxToReload = getMaxCountProd(posProd);
+        int branch = 0;
+        int reload = maxReload(posProd);
+        loadProduct(posProd, reload);
+        while (branch < branchesCount) {
+            reload = branches[branch].maxReload(posProd);
+            branches[branch].loadProduct(posProd, reload);
+            maxToReload -= reload;
+            branch++;
+        }
+    }
+
+    public void reloadbranches() { // Recarga todas las sucursales con productos de la central
         int reload, posProd;
         for (int i = 0; i < branchesCount; i++) {
             posProd = branches[i].reloadIfPosibleProd();

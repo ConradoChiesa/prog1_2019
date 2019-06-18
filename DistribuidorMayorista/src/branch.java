@@ -60,14 +60,18 @@ public class branch {
 
     public void sellProd(int posProd, int selled) { // Vende productos
         if (matProdSuc[central.ROWPROD][posProd] != -1) {
-            if (matProdSuc[central.ROWPROD][posProd] >= selled) {
-                matProdSuc[central.ROWPROD][posProd] -= selled;
-            } else {
-                System.out.println("No hay suficientes productos para realizar la venta.\n" +
-                        "Solo puede venderse " + matProdSuc[central.ROWPROD][posProd]+"\n");
-            }
+            sell(posProd, selled);
         } else {
             System.out.println("La sucursal "+ branchName + " no opera este producto\n");
+        }
+    }
+
+    private void sell(int posProd, int selled) {
+        if (matProdSuc[central.ROWPROD][posProd] >= selled) {
+            matProdSuc[central.ROWPROD][posProd] -= selled;
+        } else {
+            System.out.println("No hay suficientes productos para realizar la venta.\n" +
+                    "Solo puede venderse " + matProdSuc[central.ROWPROD][posProd]+"\n");
         }
     }
 
@@ -76,6 +80,7 @@ public class branch {
         if (prods <= max && posProd > -1 && posProd < central.MAXPRODUCTS) {
             setMaxOfProd(posProd, max);
             setMinOfProd(posProd, min);
+            matProdSuc[central.ROWPROD][posProd] = 0; //tuve que forzar esto o no iniciaba el producto por el if de la funcion loadProduct
             loadProduct(posProd, prods);
         } else {
             if (prods > max) {
