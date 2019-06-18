@@ -79,12 +79,16 @@ public class network {
         elMayonesa.createBranch(nueve);
         nueve.startProd(2, 0, 10, 30);
         nueve.startProd(4, 0, 10, 30);
+        nueve.startProd(5, 0, 10, 30);
 
 
         branch diez = new branch("diez");
         elMayonesa.createBranch(diez);
         diez.startProd(0, 0, 10, 30);
         diez.startProd(3, 0, 10, 30);
+        diez.reload(3, 45);
+
+        ocho.sellProd(2, 63);
 
         branch once = new branch("once");
         elMayonesa.createBranch(once);

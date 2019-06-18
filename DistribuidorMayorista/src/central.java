@@ -3,10 +3,10 @@ public class central {
 
     final static int MAXPRODUCTS = 5; // Maximo de productos distintos o columnas de la matriz
     final static int MAXROW = 3; // Maximo de filas
-    private final static int MAXBRANCH = 10; // Maximo de sucursales
     final static int ROWPROD = 0; // Fila de cantidad de productos
     final static int ROWMINPROD = 1; // Fila cantidad minima de productos
     final static int ROWMAXPROD = 2; // Fila cantidad maxima de productos
+    private final static int MAXBRANCH = 10; // Maximo de sucursales
     private int matProd [][] = new int[MAXROW][MAXPRODUCTS];
     private branch branches [] = new branch[MAXBRANCH];
     private int branchesCount = 0;
@@ -32,11 +32,6 @@ public class central {
         }
     }
 
-//    public void listBranchUnstockProds() {
-//        for (int i = 0; i < branchesCount; i++) {
-//            branches[i].listUnstock();
-//        }
-//    }
 
     //METODOS SETTER
     public void reloadbranches() {
@@ -57,21 +52,24 @@ public class central {
         }
     }
     public void createBranch (branch suc) {
+        String branchName;
         if (branchesCount < MAXBRANCH) {
             branches[branchesCount] = suc;
-            System.out.println("Sucursal "+branchesCount+" creada con exito");
+            branchName = branches[branchesCount].branchName();
+
+            System.out.println("Sucursal "+branchesCount+" creada con exito con el nombre "+branchName+"\n");
             branchesCount ++;
         } else {
-            System.out.println("No se pueden crear más sucursales");
+            System.out.println("No se pueden crear más sucursales\n");
         }
     }
 
     public void loadProduct(int posProd, int cantProd) {
         if (cantProd < 0 || (cantProd + matProd[ROWPROD][posProd]) > matProd[ROWMAXPROD][posProd]) {
             if (cantProd + matProd[ROWPROD][posProd] > matProd[ROWMAXPROD][posProd]) {
-                System.out.println("La cantidad de productos supera el máximo establecido");
+                System.out.println("La cantidad de productos supera el máximo establecido\n");
             } else {
-                System.out.println("El mínimo de productos a cargar es uno");
+                System.out.println("El mínimo de productos a cargar es uno\n");
             }
         } else {
             matProd[ROWPROD][posProd] += cantProd;
@@ -82,7 +80,7 @@ public class central {
         if (min > -1) {
             matProd[ROWMINPROD][posProd] = min;
         } else {
-            System.out.println("El mínimo de productos debe ser mayor o igual a cero");
+            System.out.println("El mínimo de productos debe ser mayor o igual a cero\n");
         }
     }
 
@@ -92,11 +90,10 @@ public class central {
             if (max > matProd[ROWMINPROD][posProd]) {
                 matProd[ROWMAXPROD][posProd] = max;
             } else {
-                System.out.println("El máximo de poductos debe ser mayor al mínimo");
+                System.out.println("El máximo de poductos debe ser mayor al mínimo\n");
             }
         } else {
-            System.out.println("El número de producto ingresado esta fuera de los posibles");
-
+            System.out.println("El número de producto ingresado esta fuera de los posibles\n");
         }
     }
 
@@ -106,6 +103,7 @@ public class central {
             setMaxOfProd(i, max);
         }
     }
+
     public void sellProd(int posProd, int selled) {
         if (matProd[ROWPROD][posProd] >= selled) {
             matProd[ROWPROD][posProd] -= selled;
@@ -132,3 +130,9 @@ public class central {
     }
 }
 
+
+//    public void listBranchUnstockProds() {
+//        for (int i = 0; i < branchesCount; i++) {
+//            branches[i].listUnstock();
+//        }
+//    }
