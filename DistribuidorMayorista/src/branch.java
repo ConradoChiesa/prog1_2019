@@ -12,7 +12,7 @@ public class branch {
     }
 
     //METODOS GETTER
-    public void listProds(){
+    public void listProds(){ // Lista los productos que posee la sucursal
         System.out.println("Pruductos En sucursal " + branchName);
         for (int i = 0; i < central.MAXPRODUCTS; i++) {
             if (matProdSuc[central.ROWPROD][i] != -1) {
@@ -22,16 +22,25 @@ public class branch {
         }
     }
 
-    private boolean evaluateProd(int prod) { //evalua si el producto lo opera la sucursal y esta por debajo del mínimo
+    private boolean evaluateProd(int prod) { // Evalua si el producto lo opera la sucursal y esta por debajo del mínimo
         boolean valid = true;
         if (matProdSuc[central.ROWPROD][prod] == -1 || matProdSuc[central.ROWPROD][prod] > matProdSuc[central.ROWMINPROD][prod])
             valid = false;
         return valid;
     }
 
+    public int maxReload(int prod) { //Devuelve el máximo a recargar de un producto
+        int count = 0;
+        count = matProdSuc[central.ROWMAXPROD][prod] - matProdSuc[central.ROWPROD][prod];
+        return count;
+    }
+
+    public String branchName() { return branchName; } // Devuelve el nombre de la sucursal
+
 
     //METODOS SETTER
-    private void inicMat(int [][] mat) {
+
+    private void inicMat(int [][] mat) { // Setea la matriz inicial
         for (int i = 0; i < central.MAXROW; i++) {
             for (int j = 0; j < central.MAXPRODUCTS; j++) {
                 mat[i][j] = -1;
@@ -39,8 +48,7 @@ public class branch {
         }
     }
 
-    public void addProducts(int posProd, int reload) {
-
+    public void loadProduct(int posProd, int reload) { // Agrega productos
         if (matProdSuc[central.ROWPROD][posProd] != -1 && matProdSuc[central.ROWMINPROD][posProd] != -1) {
             if ((matProdSuc[central.ROWPROD][posProd] + reload) > matProdSuc[central.ROWMAXPROD][posProd]) {
                 System.out.println("En la sucursal "+branchName+" No hay lugar para tantos productos\n");
@@ -49,7 +57,8 @@ public class branch {
             }
         }
     }
-    public void sellProd(int posProd, int selled) {
+
+    public void sellProd(int posProd, int selled) { // Vende productos
         if (matProdSuc[central.ROWPROD][posProd] != -1) {
             if (matProdSuc[central.ROWPROD][posProd] >= selled) {
                 matProdSuc[central.ROWPROD][posProd] -= selled;
@@ -61,12 +70,13 @@ public class branch {
             System.out.println("La sucursal "+ branchName + " no opera este producto\n");
         }
     }
-    public void startProd (int posProd, int prods, int min, int max) {
+
+    public void startProd (int posProd, int prods, int min, int max) { // Inicia un producto
         String error = "";
         if (prods <= max && posProd > -1 && posProd < central.MAXPRODUCTS) {
-            matProdSuc[central.ROWPROD][posProd] = prods;
-            matProdSuc[central.ROWMINPROD][posProd] = min;
-            matProdSuc[central.ROWMAXPROD][posProd] = max;
+            setMaxOfProd(posProd, max);
+            setMinOfProd(posProd, min);
+            loadProduct(posProd, prods);
         } else {
             if (prods > max) {
                 error = "Los productos son más de los que se pueden almacenar\n";
@@ -77,47 +87,46 @@ public class branch {
         }
     }
 
-    public int prodToReload(int prod) {
+    public int cantProdToReload(int prod) { // Devuelve la cantidad de productos a stockear
         int result = ((matProdSuc[central.ROWMINPROD][prod] + matProdSuc[central.ROWMAXPROD][prod]) / 2) - matProdSuc[central.ROWPROD][prod];
         return result;
     }
 
-    public int reloadIfPosibleProd() {
-        int AUX = -1;
-        for (int i = 0; i < central.MAXPRODUCTS; i++) {
-            if (AUX == -1 && evaluateProd(i)) {
-                AUX = i;
+    public int reloadIfPosibleProd() { // Devuelve la posición del producto que necesita ser stockeado
+        int posProd = 0;
+        while (posProd < central.MAXPRODUCTS) {
+            if (evaluateProd(posProd)) {
+                return posProd;
             }
-        }
-        return AUX;
-        /*CONSULTAR LA SIGUIENTE POSIBILIDAD
-
-            for (int i = 0; i < central.MAXPRODUCTS; i++) {
-            if (evaluateProd(i)) {
-                return = i;
-            }
+            posProd++;
         }
         return -1;
-         */
     }
 
+    private void setMaxOfProd(int posProd, int max) {
 
-    public void reload(int prod, int reload) {
-        if (reload + matProdSuc[central.ROWPROD][prod] < matProdSuc[central.ROWMAXPROD][prod]){
-        matProdSuc[central.ROWPROD][prod] += reload;
+        if (posProd >= 0 && posProd < central.MAXPRODUCTS) {
+            if (max > matProdSuc[central.ROWMINPROD][posProd]) {
+                matProdSuc[central.ROWMAXPROD][posProd] = max;
+            } else {
+                System.out.println("El máximo de poductos debe ser mayor al mínimo\n");
+            }
         } else {
-            System.out.println("La cantidad de productos supera el máximo que se puede stockear\n");
+            System.out.println("El número de producto ingresado esta fuera de los posibles\n");
         }
-
     }
 
-    public int maxReload(int prod) {
-        int count = 0;
-        count = matProdSuc[central.ROWMAXPROD][prod] - matProdSuc[central.ROWPROD][prod];
-        return count;
+    private void setMinOfProd(int posProd, int min) {
+        if (min > -1 && min < matProdSuc[central.ROWMAXPROD][posProd]) {
+            matProdSuc[central.ROWMINPROD][posProd] = min;
+        } else {
+            if (min < 0) {
+                System.out.println("El mínimo de productos debe ser mayor o igual a cero\n");
+            } else {
+                System.out.println("El mínimo debe ser menor al máximo\n");
+            }
+        }
     }
-    public String branchName() { return branchName; }
-
 }
 
 
