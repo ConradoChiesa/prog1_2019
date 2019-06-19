@@ -26,6 +26,7 @@ public class central {
     }
 
     public void listNetworkStatus() { // Lista el estado de toda la red
+        System.out.println("Listado completo de los productos");
         printMatProd();
         for (int i = 0; i < branchesCount; i++) {
             branches[i].listProds();
@@ -56,6 +57,7 @@ public class central {
         int maxToReload = getMaxCountProd(posProd);
         int branch = 0;
         int reload = maxReload(posProd);
+        System.out.println("Realizando full stock del ID_producto-> "+posProd);
         loadProduct(posProd, reload);
         while (branch < branchesCount) {
             reload = branches[branch].maxReload(posProd);
@@ -104,6 +106,7 @@ public class central {
             }
         } else {
             matProd[ROWPROD][posProd] += cantProd;
+            System.out.println("El ID_producto-> "+posProd+" a sido cargado con éxito con "+ cantProd +" productos.");
         }
     }
 
@@ -132,20 +135,21 @@ public class central {
         }
     }
 
-//    public void setAllMinMax (int min, int max) {
-//        for (int i = 0; i < MAXPRODUCTS; i++) {
-//            setMinOfProd(i, min);
-//            setMaxOfProd(i, max);
-//        }
-//    }
 
     public void sellProd(int posProd, int selled) {
         if (matProd[ROWPROD][posProd] >= selled) {
-            matProd[ROWPROD][posProd] -= selled;
+            sell(posProd, selled);
+
         } else {
             System.out.println("No hay suficientes productos para realizar la venta.\n" +
                     "Solo puede venderse " + matProd[ROWPROD][posProd]);
         }
+    }
+
+    private void sell(int posProd, int selled) {
+        matProd[ROWPROD][posProd] -= selled;
+        System.out.println("En Central se han vendido "+ selled + " del producto "+ posProd);
+
     }
 
     private void setInicMat(int [][] mat) {
@@ -161,6 +165,7 @@ public class central {
         if (prods <= max && posProd > -1 && posProd < MAXPRODUCTS) {
             setMaxOfProd(posProd, max);
             setMinOfProd(posProd, min);
+            System.out.println("Producto inicializado con éxito");
             loadProduct(posProd, prods);
         } else {
             if (prods > max) {
@@ -172,6 +177,7 @@ public class central {
         }
     }
 
+}
 
 //    private void offerReload(int prod, int maxToReload) {
 //        if (buyAndComplete()) {
@@ -185,11 +191,18 @@ public class central {
 //            while ()
 //        return valid;
 //    }
-}
 
 
 //    public void listBranchUnstockProds() {
 //        for (int i = 0; i < branchesCount; i++) {
 //            branches[i].listUnstock();
+//        }
+//    }
+
+
+//    public void setAllMinMax (int min, int max) {
+//        for (int i = 0; i < MAXPRODUCTS; i++) {
+//            setMinOfProd(i, min);
+//            setMaxOfProd(i, max);
 //        }
 //    }

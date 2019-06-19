@@ -54,6 +54,8 @@ public class branch {
                 System.out.println("En la sucursal "+branchName+" No hay lugar para tantos productos\n");
             } else {
                 matProdSuc[central.ROWPROD][posProd] += reload;
+                System.out.println("En la sucursal "+branchName+" se recargaron "+reload+" del ID_producto-> "+posProd+"\n");
+
             }
         }
     }
@@ -69,6 +71,7 @@ public class branch {
     private void sell(int posProd, int selled) {
         if (matProdSuc[central.ROWPROD][posProd] >= selled) {
             matProdSuc[central.ROWPROD][posProd] -= selled;
+            System.out.println("La sucursal "+ branchName + " se vendieron "+selled+ " del ID_producto-> "+ posProd+ "\n");
         } else {
             System.out.println("No hay suficientes productos para realizar la venta.\n" +
                     "Solo puede venderse " + matProdSuc[central.ROWPROD][posProd]+"\n");
@@ -82,6 +85,7 @@ public class branch {
             setMinOfProd(posProd, min);
             matProdSuc[central.ROWPROD][posProd] = 0; //tuve que forzar esto o no iniciaba el producto por el if de la funcion loadProduct
             loadProduct(posProd, prods);
+            System.out.println("En la sucursal "+ branchName + " se inicializo el ID_producto-> "+posProd+" con éxito" + "\n");
         } else {
             if (prods > max) {
                 error = "Los productos son más de los que se pueden almacenar\n";
